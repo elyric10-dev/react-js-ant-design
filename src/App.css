@@ -1,0 +1,143 @@
+/* .header {
+  padding-top: 12px;
+  background-color: #fff;
+}
+
+.content {
+  margin: 24px 16px;
+  padding: 20px;
+}
+
+.menu-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.ant-menu-item-selected {
+  background-color: var(--forest-green) !important;
+  color: #fff !important;
+}
+.trigger-button {
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.sidebar-container {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+} */
+
+.custom-header {
+  background-color: #fff;
+  padding-top: 12px;
+}
+
+.sidebar-container {
+  /* position: relative; */
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+}
+
+.trigger-button {
+  display: flex;
+  position: fixed;
+  bottom: 8px;
+  left: 8px;
+}
+
+.logo {
+  color: var(--forest-green);
+  font-size: 2rem;
+}
+
+.logo-container {
+  display: grid;
+  justify-content: center;
+  height: 64px;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.ant-menu-item-selected .anticon,
+.ant-menu-item-selected > .ant-menu-title-content {
+  color: blanchedalmond !important;
+}
+
+.ant-menu-item-selected {
+  background-color: var(--forest-green) !important;
+  color: #fff !important;
+}
+
+.header-icon {
+  padding: 8px;
+  border-radius: 7px;
+  opacity: 0.8;
+  background-color: var(--forest-green);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.header-icon:hover {
+  opacity: 1;
+}
+
+.avatar {
+  background-color: blanchedalmond;
+  color: var(--light-black);
+  border: 1px solid rgba(var(--light-black), 0.5);
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+}
+.avatar:hover {
+  opacity: 1;
+}
+
+.content-container {
+  padding: 32px;
+}
+
+.explore-button.ant-btn-primary {
+  background-color: var(--forest-green);
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+.explore-button.ant-btn-primary:hover {
+  background-color: var(--forest-green) !important;
+  color: #fff !important;
+  opacity: 0.8 !important;
+}
+
+.top-seller-button.ant-btn {
+  background-color: blanchedalmond;
+  color: var(--forest-green);
+  opacity: 1;
+  transition: 0.2s ease-in-out;
+}
+
+.top-seller-button.ant-btn:hover {
+  background-color: blanchedalmond !important;
+  color: var(--forest-green) !important;
+  opacity: 0.8 !important;
+}
+
+.ant-image-preview-wrap {
+  backdrop-filter: blur(5px) !important;
+}
