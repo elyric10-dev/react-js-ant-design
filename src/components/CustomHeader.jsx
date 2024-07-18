@@ -7,22 +7,28 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 
-function CustomHeader() {
+function CustomHeader({ collapsed }) {
   return (
-    <Flex align="center" justify="space-between">
-      <Typography.Title level={3} type="secondary">
+    <div
+      className={`transition-delay flex flex-col md:flex-row md:items-center md:justify-between ${
+        collapsed ? "items-center" : ""
+      }`}
+    >
+      <Typography.Title level={4} type="secondary">
         Welcome back, Elyric
       </Typography.Title>
-      <Flex align="center" gap={"3rem"}>
-        <Search placeholder="Search Dashboard" />
+      <div className="flex items-center justify-between gap-2">
+        <div className="w-full min-w-40 max-w-72">
+          <Search placeholder="Search Dashboard" />
+        </div>
 
         <Flex gap={6}>
           <MessageOutlined className="header-icon" />
           <NotificationOutlined className="header-icon" />
           <Avatar icon={<UserOutlined />} className="avatar" />
         </Flex>
-      </Flex>
-    </Flex>
+      </div>
+    </div>
   );
 }
 

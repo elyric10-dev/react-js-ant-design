@@ -45,7 +45,7 @@ function Sidebar() {
   ];
   return (
     <div>
-      <Flex align="center" justify="center" className="logo-container">
+      <Flex align="center" justify="center" className="logo-container md:h-16">
         <div className="logo">
           <FaLeaf />
         </div>

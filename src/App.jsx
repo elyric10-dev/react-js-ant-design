@@ -12,28 +12,34 @@ function App() {
   const { Sider, Header, Content } = Layout;
   const [collapsed, setCollapsed] = useState(false);
   return (
-    <Layout>
+    <Layout className="overflow-hidden">
       <Sider theme="light" trigger={null} collapsible collapsed={collapsed}>
-        <div className="sidebar-container">
+        <div
+          className={`sidebar-container ${
+            collapsed ? "w-[81px]" : "w-[201px]"
+          }`}
+        >
           <Sidebar />
-          <Button
-            type="text"
-            size="large"
-            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-            onClick={() => setCollapsed(!collapsed)}
-            className="trigger-button"
-          />
+          <div>
+            <Button
+              type="text"
+              size="large"
+              icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+              onClick={() => setCollapsed(!collapsed)}
+              className="trigger-button"
+            />
+          </div>
         </div>
       </Sider>
       <Layout>
-        <Header className="custom-header">
-          <CustomHeader></CustomHeader>
+        <Header className="custom-header md:h-16">
+          <CustomHeader collapsed={collapsed}></CustomHeader>
         </Header>
-        <Content className="content-container">
-          <Flex gap={"large"}>
+        <Content className="content-container md:p-4 lg:p-8">
+          <div className="flex flex-col lg:flex-row">
             <MainContent />
             <SideContent />
-          </Flex>
+          </div>
         </Content>
       </Layout>
     </Layout>

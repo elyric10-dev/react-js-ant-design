@@ -6,7 +6,7 @@ function ProductLists() {
   const { Meta } = Card;
   return (
     <>
-      <Flex align="center" justify="space-between">
+      <Flex justify="space-between">
         <Typography.Title
           level={3}
           strong
@@ -20,7 +20,7 @@ function ProductLists() {
       </Flex>
 
       <div className="overflow-x-scroll">
-        <Flex gap={"20px"} align="center" justify="flex-start">
+        <Flex gap={"8px"} align="center" justify="flex-start">
           {plantData.map((plant) => (
             <Card key={plant.id} hoverable>
               <Image

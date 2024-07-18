@@ -5,7 +5,7 @@ import plant3 from "../assets/images/plant3.png";
 function SidebarContent() {
   return (
     <div>
-      <Card className="relative bg-gradient-to-b from-[var(--forest-green)] to-[#87e8de]">
+      <Card className="lg:h-[250px] relative bg-gradient-to-b from-[var(--forest-green)] to-[#87e8de]">
         <Flex vertical="row">
           <Typography.Title level={4} strong>
             Today

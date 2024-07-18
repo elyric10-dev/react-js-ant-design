@@ -36,13 +36,13 @@ const data = [
 function Activity() {
   return (
     <Flex vertical gap={"small"}>
-      <Flex align="center" justify="space-between">
+      <Flex justify="space-between">
         <Typography.Title
           level={3}
           strong
           className="!text-[var(--forest-green)]"
         >
-          My Listing
+          Activities
         </Typography.Title>
         <Button type="link" className="text-gray-400">
           View All

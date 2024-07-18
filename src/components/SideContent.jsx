@@ -5,7 +5,7 @@ import { Flex } from "antd";
 
 function SideContent() {
   return (
-    <Flex vertical gap={"2.3rem"} className="w-80">
+    <Flex vertical className="w-80 gap-8 mt-8 lg:mt-0 lg:ml-2">
       <SidebarContent />
       <Activity />
     </Flex>

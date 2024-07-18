@@ -35,35 +35,39 @@
 } */
 
 .custom-header {
+  height: 120px;
   background-color: #fff;
   padding-top: 12px;
 }
 
 .sidebar-container {
   /* position: relative; */
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   height: 100vh;
+  transition: 0.1s ease-in-out;
+  transition-delay: 0.05s;
 }
 
 .trigger-button {
   display: flex;
-  position: fixed;
-  bottom: 8px;
-  left: 8px;
-}
-
-.logo {
-  color: var(--forest-green);
-  font-size: 2rem;
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  bottom: 0;
 }
 
 .logo-container {
   display: grid;
   justify-content: center;
-  height: 64px;
+  height: 120px;
+}
+
+.logo {
+  color: var(--forest-green);
+  font-size: 2rem;
 }
 
 .menu-items {
@@ -110,7 +114,7 @@
 }
 
 .content-container {
-  padding: 32px;
+  padding: 8px;
 }
 
 .explore-button.ant-btn-primary {
